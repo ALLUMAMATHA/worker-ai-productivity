@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Worker Productivity</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+    <div class="top-header-inner">
+        <div class="title-box">
+            <div class="title-main">AI Worker Productivity</div>
+            <div class="title-sub">Factory Dashboard</div>
+        </div>
+
+        <div class="header-actions">
+            <div id="errorBanner" class="error-banner hidden"></div>
+            <button id="reseedBtn" class="btn-reseed">Reseed DB</button>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN DASHBOARD -->
+<main class="main-grid">
+
+    <!-- WORKERS -->
+    <section class="panel box workers-box">
+        <div class="panel-title">Workers</div>
+        <div id="workersBox" class="panel-body"></div>
+    </section>
+
+    <!-- WORKSTATIONS -->
+    <section class="panel box workstations-box">
+        <div class="panel-title">Workstations</div>
+        <div id="stationsBox" class="panel-body"></div>
+    </section>
+
+    <!-- FACTORY SUMMARY -->
+    <section class="panel box factory-box">
+        <div class="panel-title">Factory</div>
+        <div id="factoryBox" class="panel-body"></div>
+    </section>
+
+    <!-- SELECTED DETAILS -->
+    <section class="panel box selected-box">
+        <div class="panel-title">Selected</div>
+        <div id="selectedBox" class="panel-body selected-body">
+            <div class="empty">
+                Select a worker or workstation to see details here
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- SCRIPTS -->
+<script src="app.js"></script>
+
+</body>
+</html>
